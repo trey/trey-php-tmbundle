@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>\$localServers = array('${1:something.dev}');
+\$stagingServers = array('${2:something_else.com'});
+if (in_array(\$_SERVER['HTTP_HOST'], \$localServers)) {
+    ${3:// Development settings}
+} elseif (in_array(\$_SERVER['HTTP_HOST'], \$stagingServers)) {
+    ${4:// Staging settings}
+} else {
+    ${5:// Production settings}
+}</string>
+	<key>name</key>
+	<string>Hostname</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>hostname</string>
+	<key>uuid</key>
+	<string>C33D080B-D7F3-4248-AA10-4D81B2D3B610</string>
+</dict>
+</plist>
